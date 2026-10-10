@@ -1,0 +1,172 @@
+/* ===== RESET Y BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor-principal {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* ===== HEADER CON AVATAR ===== */
+.header-autor {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #667eea;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+  flex-shrink: 0;
+}
+
+.info-autor h1 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.info-autor .nombre-corto {
+  color: #667eea;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-autor .curso {
+  color: #7f8c8d;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* ===== DESCRIPCIÓN ===== */
+.descripcion {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.descripcion h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.descripcion p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* ===== PROYECTOS ===== */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.proyecto-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+  border: 3px solid transparent;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-color: #667eea;
+}
+
+.proyecto-card .icono {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.proyecto-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.proyecto-card p {
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  font-size: 0.95em;
+}
+
+.proyecto-card a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.proyecto-card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #ecf0f1;
+  color: #95a5a6;
+  font-size: 0.9em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .header-autor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedor-principal {
+    padding: 25px;
+  }
+
+  .info-autor h1 {
+    font-size: 1.6em;
+  }
+}

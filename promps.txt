@@ -1,0 +1,5 @@
+Actua como un diseñador web y ayuda, html y css por separado:
+Añade en el archivo index.html el nombre del autor (Manuel Otacoma - MeoT). incluye una foto, avatar o
+logo personal.
+Incorpora texto en la página que indique el nombre del curso (Programando con Javascript) y una breve
+descripción de los proyectos (Pagina que se muestra los retyos de juegos creados en el curso.).
